@@ -79,8 +79,8 @@ function setup() {
 function draw() {
   background(0, 0, 0); // white background
   noFill(); // no fill
-  stroke(0, 0, 200); // black stroke
-  strokeWeight(w(0.001)); // light stroke weight(255);
+  stroke(Math.random() * 360, Math.random() * 100, 100); // black stroke
+  strokeWeight(w(0.003));
 
   for (let radius = 0.05; radius < 1.9; radius += 0.01) {
     const circle = makeCircle(20, radius);
